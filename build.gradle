@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+}
+
+group 'games.voxel'
+archivesBaseName = 'oxygen'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project('SandboxAPI')
+}
